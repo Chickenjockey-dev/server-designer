@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHJK Server Designer</title>
+    <link rel="stylesheet" href="/_assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<script src="/_assets/js/sections.js"></script>
+    <noscript>
+        <div class="warning">
+            <p></i><i class="fa-solid fa-triangle-exclamation"></i> WARNING! You have javascipt disabled, you need to enable javascript to use this tool! <a href="https://www.enable-javascript.com/">Learn more.</a></p>
+        </div>
+    </noscript>
+    <div id="inject_target"></div>
+    <nav>
+        <a href="#"><div class="navbarlogo">Server Designer</div></a>
+
+        <ul class="navbarmenu">
+            <li><button data-target="section-text">Text</button></li>
+            <li><button data-target="section-colors">Colors</button></li>
+            <li><button data-target="section-icons">Icons</button></li>
+        </ul>
+    </nav>
+
+
+    <main>
+    <div id="toast" class="toast">Copied to clipboard!</div>
+
+        <div id="section-main" class="section active">
+            <h1>CHJK Tools</h1>
+            <p>Tools for creating Minecraft servers<br>by <a href="https://chjk.xyz">CHJK Studios</a></p>
+            <br>
+            <h2>Select a Tool in the Navbar to get stared</h2>
+        </div>
+
+        <div id="section-text" class="section">
+            <h1>Small Text Generator</h1>
+            <p>Generate smalltext ʟɪᴋᴇ ᴛʜɪѕ. </p>
+            <br>
+            <div class="container">
+                <textarea placeholder="Input" id="smalltext-inputText" rows="5" cols="40"></textarea>
+                <textarea placeholder="Output" id="smalltext-outputText" rows="5" cols="40" readonly></textarea>
+                <button class="smalltextcopybutton" id="smalltextcopybutton">Copy</button>
+            </div>
+        </div>
+
+
+        <div id="section-colors" class="section">
+            <h1>Color Palette</h1>
+            <p>Nice Looking Colors. (click to copy hexcode)</p>
+            <br>
+            <!-- :skull: this took hours -->
+            <div class="grid">
+                <button class="colorbox" style="background-color: #ffe3e3;"></button>
+                <button class="colorbox" style="background-color: #ffe1d6;"></button>
+                <button class="colorbox" style="background-color: #ffe8cc;"></button>
+                <button class="colorbox" style="background-color: #fff2cc;"></button>
+                <button class="colorbox" style="background-color: #fff3bf;"></button>
+                <button class="colorbox" style="background-color: #e9ffc2;"></button>
+                <button class="colorbox" style="background-color: #d3f9d8;"></button>
+                <button class="colorbox" style="background-color: #c3fae8;"></button>
+                <button class="colorbox" style="background-color: #d0ebff;"></button>
+                <button class="colorbox" style="background-color: #dcdcff;"></button>
+                <button class="colorbox" style="background-color: #f3d9fa;"></button>
+                <!-- Next Row -->
+                <button class="colorbox" style="background-color: #ffc9c9;"></button>
+                <button class="colorbox" style="background-color: #ffc2ad;"></button>
+                <button class="colorbox" style="background-color: #ffd8a8;"></button>
+                <button class="colorbox" style="background-color: #ffe099;"></button>
+                <button class="colorbox" style="background-color: #ffec99;"></button>
+                <button class="colorbox" style="background-color: #dbff99;"></button>
+                <button class="colorbox" style="background-color: #b2f2bb;"></button>
+                <button class="colorbox" style="background-color: #96f2d7;"></button>
+                <button class="colorbox" style="background-color: #a5d8ff;"></button>
+                <button class="colorbox" style="background-color: #c2c7ff;"></button>
+                <button class="colorbox" style="background-color: #e9befa;"></button>
+                <!-- Next Row -->
+                <button class="colorbox" style="background-color: #ff8787;"></button>
+                <button class="colorbox" style="background-color: #ff825c;"></button>
+                <button class="colorbox" style="background-color: #ffa94d;"></button>
+                <button class="colorbox" style="background-color: #ffbb33;"></button>
+                <button class="colorbox" style="background-color: #ffd43b;"></button>
+                <button class="colorbox" style="background-color: #b3ff33;"></button>
+                <button class="colorbox" style="background-color: #69db7c;"></button>
+                <button class="colorbox" style="background-color: #38d9a9;"></button>
+                <button class="colorbox" style="background-color: #4dabf7;"></button>
+                <button class="colorbox" style="background-color: #7a8cff;"></button>
+                <button class="colorbox" style="background-color: #c577f2;"></button>
+                <!-- Next Row -->
+                <button class="colorbox" style="background-color: #fa5252;"></button>
+                <button class="colorbox" style="background-color: #f7552f;"></button>
+                <button class="colorbox" style="background-color: #fd7e14;"></button>
+                <button class="colorbox" style="background-color: #f59500;"></button>
+                <button class="colorbox" style="background-color: #fab005;"></button>
+                <button class="colorbox" style="background-color: #85e000;"></button>
+                <button class="colorbox" style="background-color: #40c057;"></button>
+                <button class="colorbox" style="background-color: #12b886;"></button>
+                <button class="colorbox" style="background-color: #228be6;"></button>
+                <button class="colorbox" style="background-color: #4958e0;"></button>
+                <button class="colorbox" style="background-color: #ad4bdb;"></button>
+                <!-- Next Row -->
+                <button class="colorbox" style="background-color: #e03131;"></button>
+                <button class="colorbox" style="background-color: #cc3d21;"></button>
+                <button class="colorbox" style="background-color: #e8590c;"></button>
+                <button class="colorbox" style="background-color: #c87200;"></button>
+                <button class="colorbox" style="background-color: #f08c00;"></button>
+                <button class="colorbox" style="background-color: #5ba300;"></button>
+                <button class="colorbox" style="background-color: #2f9e44;"></button>
+                <button class="colorbox" style="background-color: #099268;"></button>
+                <button class="colorbox" style="background-color: #1971c2;"></button>
+                <button class="colorbox" style="background-color: #313b99;"></button>
+                <button class="colorbox" style="background-color: #9c36b5;"></button>
+                <!-- Next Row -->
+                <button class="colorbox" style="background-color: #7f0b0b;"></button>
+                <button class="colorbox" style="background-color: #791f12;"></button>
+                <button class="colorbox" style="background-color: #802107;"></button>
+                <button class="colorbox" style="background-color: #a05e07;"></button>
+                <button class="colorbox" style="background-color: #9e5002;"></button>
+                <button class="colorbox" style="background-color: #254400;"></button>
+                <button class="colorbox" style="background-color: #145422;"></button>
+                <button class="colorbox" style="background-color: #034233;"></button>
+                <button class="colorbox" style="background-color: #0d355f;"></button>
+                <button class="colorbox" style="background-color: #141839;"></button>
+                <button class="colorbox" style="background-color: #4a1856;"></button>
+            </div>
+        </div>
+
+
+        <div id="section-icons" class="section">
+            <h1>Icons</h1>
+            <p>Minecraft supported icons</p>
+            <div class="grid">
+                t
+            </div>
+        </div>
+    </main>
+    <footer>
+
+
+    </footer>
+<script src="/_assets/js/smalltext.js"></script>
+<script src="/_assets/js/colorgrid.js"></script>
+<script src="/_assets/js/toasts.js"></script>
+<script src="/_assets/js/inject.js"></script>
+<script>
+    injectHTML("/_assets/inject/beta.html", "inject_target");
+</script>
+</body>
+</html>
