@@ -30,7 +30,7 @@ const textarea = document.getElementById('smalltext-outputText');
 copyBtn.addEventListener('click', async () => {
     try {
         await navigator.clipboard.writeText(textarea.value);
-        showToast('test')
+        showToast('Copied!')
     } catch (err) {
         showToast('Failed to copy: ', err);
     }
