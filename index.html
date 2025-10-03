@@ -33,7 +33,18 @@
             <h1>CHJK Tools</h1>
             <p>Tools for creating Minecraft servers<br>by <a href="https://chjk.xyz">CHJK Studios</a></p>
             <br>
-            <h2>Select a Tool in the Navbar to get stared</h2>
+            <div class="container" style="flex-direction: column;">
+                <h1>Tools</h1>
+                <button class="toolselectionbox" onclick="navigateTo('section-text');">
+                    Smalltext
+                </button>
+                <button class="toolselectionbox" onclick="navigateTo('section-colors');">
+                    Colors
+                </button>
+                <button class="toolselectionbox" onclick="navigateTo('section-icons');">
+                    Icons
+                </button>
+            </div>
         </div>
 
         <div id="section-text" class="section">
@@ -41,8 +52,8 @@
             <p>Generate smalltext ʟɪᴋᴇ ᴛʜɪѕ. </p>
             <br>
             <div class="container">
-                <textarea placeholder="Input" id="smalltext-inputText" rows="5" cols="40"></textarea>
-                <textarea placeholder="Output" id="smalltext-outputText" rows="5" cols="40" readonly></textarea>
+                <textarea placeholder="Input" id="smalltext-inputText"></textarea>
+                <textarea placeholder="Output" id="smalltext-outputText" readonly></textarea>
                 <button class="smalltextcopybutton" id="smalltextcopybutton">Copy</button>
             </div>
         </div>
