@@ -153,6 +153,10 @@ textarea {
   font-family: 'Segoe UI', sans-serif;
 }
 
+textarea:focus {
+  outline: 2px solid var(--accent-green);
+}
+
 .smalltextcopybutton {
   border: none;
   cursor: pointer;
@@ -167,9 +171,7 @@ textarea {
   background-color: var(--accent-dark-green);
 }
 
-textarea:focus {
-  outline: 2px solid var(--accent-green);
-}
+
 
 button {
   border: none;
