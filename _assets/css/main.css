@@ -227,6 +227,11 @@ button:active {
 
 a {
   color: var(--blue);
+  transition: 0.1s all linear;
+}
+
+a:hover {
+  color: var(--blue-dark);
 }
 
 .toast {
@@ -340,4 +345,21 @@ a {
   background-color: var(--bg-black);
   padding: 10px;
   border-radius: 7px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--bg-dark);
+  color: var(--fg-damp-white);
+  margin-top: auto;
+  border-top: 2px solid var(--green);
+}
+
+#commit {
+  font-family: monospace;
+  font-weight: bold;
+  background-color: var(--bg-black);
+  padding: 5px;
+  border-radius: 5px;
 }

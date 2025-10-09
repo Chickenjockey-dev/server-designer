@@ -113,7 +113,7 @@
   };
 
   // --- Loader Hide Logic ---
-  const MIN_TIME = 200; // 0.5s minimum
+  const MIN_TIME = 500; // 0.5s minimum
   const start = Date.now();
 
   function hideOverlay() {
@@ -122,7 +122,7 @@
     setTimeout(() => {
       overlay.classList.add("fade-out");
       document.body.classList.remove("loading");
-      setTimeout(() => overlay.remove(), 500); // match transition
+      setTimeout(() => overlay.remove(), 600); // match transition
     }, remaining);
   }
 
