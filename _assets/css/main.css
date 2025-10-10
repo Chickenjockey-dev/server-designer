@@ -340,6 +340,7 @@ a:hover {
 
 #screensize-warning {
   display: none;
+  transition: 0.1s all linear;
 }
 
 @media (max-width: 350px) {
@@ -356,6 +357,7 @@ a:hover {
   padding-top: 1px;
   padding-bottom: 0px;
   color: var(--bg-black);
+  transform: 0.1s all linear;
 }
 
 .warning button {
