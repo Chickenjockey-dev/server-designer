@@ -12,9 +12,13 @@
 <script src="/_assets/js/load.js"></script>
     <noscript>
         <div class="warning">
-            <p></i><i class="fa-solid fa-triangle-exclamation"></i> WARNING! You have javascipt disabled, you need to enable javascript to use this tool! <a href="https://www.enable-javascript.com/">Learn more.</a></p>
+            <p><i class="fa-solid fa-triangle-exclamation"></i> WARNING! You have javascipt disabled, you need to enable javascript to use this tool! <a href="https://www.enable-javascript.com/">Learn more.</a></p>
         </div>
     </noscript>
+    <div class="warning" id="screensize-warning">
+        <p><i class="fa-solid fa-triangle-exclamation"></i>WARNING! Your screen width is too low, please switch to a bigger screen.</p>
+    </div>
+    
     <div id="inject_target"></div>
     <nav>
         <a href="#"><div class="navbarlogo">Server Designer</div></a>
@@ -65,7 +69,7 @@
             <p>Nice Looking Colors. (click to copy hexcode)</p>
             <br>
             <!-- :skull: this took hours -->
-            <div class="grid">
+            <div class="grid" id="colorgrid">
                 <button class="colorbox" style="background-color: #ffe3e3;"></button>
                 <button class="colorbox" style="background-color: #ffe1d6;"></button>
                 <button class="colorbox" style="background-color: #ffe8cc;"></button>

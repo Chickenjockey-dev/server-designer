@@ -206,6 +206,7 @@ button:active {
   textarea {
     font-size: 0.95rem;
   }
+
 }
 
 @media (max-width: 600px) {
@@ -314,6 +315,40 @@ a:hover {
   transform: scale(1.25);
 }
 
+@media (max-width: 600px) {
+  .colorbox {
+    width: 30px;
+    height: 30px;
+  }
+
+  #colorgrid {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .colorbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+  }
+
+  #colorgrid {
+    gap: 5px;
+  }
+}
+
+#screensize-warning {
+  display: none;
+}
+
+@media (max-width: 350px) {
+  #screensize-warning {
+    display: block;
+  }
+}
+
+
 .warning {
   background-color: var(--red);
   border-bottom: var(--red-light) solid 3px;
@@ -354,6 +389,7 @@ footer {
   color: var(--fg-damp-white);
   margin-top: auto;
   border-top: 2px solid var(--green);
+  margin-top: 100px;
 }
 
 #commit {
