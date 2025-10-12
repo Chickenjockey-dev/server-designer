@@ -317,6 +317,7 @@ a:hover {
 }
 
 .iconbox {
+  background-color: var(--bg-light);
   display: flex; 
   flex-direction: column;
   justify-content: center;
