@@ -6,8 +6,8 @@
   /* Accent Colors */
   --accent-green: #2ecc70;
   --accent-dark-green: #1c8247;
-  --accent-blue: hsl(217, 91%, 60%);
-  --accent-dark-blue: hsl(217, 63%, 41%);
+  --accent-blue: #3c83f6;
+  --accent-dark-blue: #2759aa;
 
   /* Extra colors: Light */
   --blue-light: #5baeff;
@@ -54,6 +54,7 @@ html,
 body {
   height: 100%;
   margin: 0;
+  overflow-x: visible;
 }
 
 body {
@@ -312,6 +313,26 @@ a:hover {
 }
 
 .colorbox:active {
+  transform: scale(1.25);
+}
+
+.iconbox {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 18rem;
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid #5f5f5f;
+  transition: all 0.1s;
+}
+
+.iconbox:hover {
+  transform: scale(1.1);
+}
+
+.iconbox:active {
   transform: scale(1.25);
 }
 
